@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <Style>
+        #product-container {
+            border: 1px solid #ccc;
+            padding:1rem 15rem;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        #product-container img {
+            width: 350px;
+            height: 350px;
+        }
+
+        #price,
+        #category,
+        #rating,
+        #count,
+        #description {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(120, 116, 116);
+            color: white;
+            font-weight: lighter;
+        }
+    </Style>
+</head>
+
+<body>
+    <div id="product-container">
+        <h1 id="title"></h1>
+        <img id="image" src="" alt="">
+        <h3>Price : </h3>
+        <h2 id="price"></h2>
+        <h3>Category : </h3>
+        <h2 id="category"></h2>
+        <h3>Rating : </h3>
+        <h2 id="rating"></h2>
+        <h3>Remaining left : </h3>
+        <h2 id="count"></h2>
+        <h3>Description : </h3>
+        <h3 id="description"></h3>
+    </div>
+    <script src="selectedProduct.js"></script>
+</body>
+
+</html>

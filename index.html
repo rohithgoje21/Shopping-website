@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        #product-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 1s 0s ease-out;
+
+        }
+        .product:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+        }
+        
+        .product img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Shopping Cart</h1></center>
+    <div id="product-container">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
