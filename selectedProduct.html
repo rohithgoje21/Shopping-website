@@ -8,8 +8,7 @@
     <Style>
         #product-container {
             border: 1px solid #ccc;
-            padding:1rem 15rem;
-            margin: 0 10px;
+            padding: 1rem;
             text-align: center;
         }
 
@@ -28,6 +27,13 @@
             background-color: rgb(120, 116, 116);
             color: white;
             font-weight: lighter;
+        }
+
+        @media (max-width: 600px) {
+            #product-container img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </Style>
 </head>
