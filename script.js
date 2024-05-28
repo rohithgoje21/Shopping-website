@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    sessionStorage.clear();
+    // sessionStorage.clear();
     const productContainer = document.getElementById('product-container');
 
     fetch('https://fakestoreapi.com/products')
@@ -28,7 +28,32 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error fetching product data:', error);
         });
 
+
+
+
+
+
+
+
+
+
+
+        document.getElementById("dark").addEventListener("click",function(){
+            document.querySelector("body").style.backgroundColor="black";
+            document.querySelector("body").style.color="white";
+            this.style.display="none";
+            document.querySelector("#light").style.display="block";
+        })
+        document.getElementById("light").addEventListener("click",function(){
+            document.querySelector("body").style.backgroundColor="white";
+            document.querySelector("body").style.color="black";
+            this.style.display="none";
+            document.querySelector("#dark").style.display="block";
+        })
+
 });
+
+
 
 
 

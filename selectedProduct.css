@@ -1,0 +1,36 @@
+#product-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+#product-container img {
+    width: 350px;
+    height: 350px;
+}
+
+#price,
+#category,
+#rating,
+#count,
+#description {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(120, 116, 116);
+    color: white;
+    font-weight: lighter;
+}
+
+.toggle {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    #product-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
