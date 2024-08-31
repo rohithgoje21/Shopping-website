@@ -21,6 +21,10 @@
     font-weight: lighter;
 }
 
+#description{
+    text-align:justify;
+}
+
 .toggle {
     display: inline;
     position: absolute;
